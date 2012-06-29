@@ -3,7 +3,7 @@ document.addEventListener("deviceready", function () {
     var prevX = 1.0;
     var threshold = 0.3;
     
-    var socket = io.connect('/');
+    var socket = io.connect('http://mobileeast.herokuapp.com/');
   
     var shaking = false;
     

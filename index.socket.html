@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MobileEast</title>
+        <meta name="viewport" content="target-densitydpi=device-dpi, initial-scale=1.0, maximum-scale=1.0;" />
+        <meta charset="utf-8">
+        <!-- jQuery Mobile -->
+        <link rel="stylesheet" href="jquery/jquery-mobile.css" />
+        <script src="jquery/jquery.js"></script>
+        <script src="jquery/jquery-mobile.js"></script>
+        <!-- PhoneGap -->
+        <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+        <!-- User defined -->
+        <link rel="stylesheet" href="styles/styles.css" />
+        
+        <script src="/socket.io/socket.io.js"></script>
+    </head>
+    <body>
+        <div data-role="page" id="home"> 
+            <div data-role="header">
+                <h1>MobileEast</h1>
+            </div> 
+            <div data-role="content">
+                <p><a data-role="button" id="hello">Hello Cambridge!</a></p>
+                <p>
+                    <img id="shakin" src="http://4.bp.blogspot.com/-8XLt5g405hs/TppyNEUAONI/AAAAAAAAAZY/5zhoXFdX_zY/s1600/aqua3.jpg"/>
+                </p>
+            </div>
+        </div> 
+        
+        <script src="accel-shake.socket.js"></script>
+    </body>
+</html>

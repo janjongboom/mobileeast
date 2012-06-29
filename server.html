@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MobileEast</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles/styles.css" />
+        
+        <script src="/socket.io/socket.io.js"></script>
+    </head>
+    <body>
+        <div style="width:400px">
+            <h1>Shake-o-meter</h1>
+            <div style="height: 30px; background-color: green; width: 0%" id="progress"></div>
+        </div>
+        <script>
+            var socket = io.connect('/');
+            
+            window.socket = socket;
+            
+            socket.on("hi", function(){
+                console.log("hi");
+            });
+            
+            socket.on("total-shakes", function (cnt) {
+                document.getElementById("progress").style.width = cnt + "%";
+            });
+            
+            socket.on("milkshake", function () {
+                window.location.href = "http://www.youtube.com/watch?v=dQw4w9WgXcQ";
+            });
+        </script>
+    </body>
+</html>

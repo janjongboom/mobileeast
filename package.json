@@ -1,0 +1,9 @@
+{
+  "name": "mobileeast",
+  "description": "Go go gadget mobile",
+  "author": "Jan Jongboom",
+  "dependencies": {
+    "socket.io": "~0.9.6"
+  },
+  "engine": "node >= 0.6.0"
+}

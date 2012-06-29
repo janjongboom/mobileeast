@@ -2,6 +2,7 @@
   "name": "mobileeast",
   "description": "Go go gadget mobile",
   "author": "Jan Jongboom",
+  "version": "0.0.1",
   "dependencies": {
     "socket.io": "~0.9.6"
   },
